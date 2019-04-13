@@ -62,6 +62,8 @@ class Server(resource.Resource, metadata.MetadataMixin, resource.TagMixin):
     flavor = resource.Body('flavor', type=dict)
     #: An ID representing the host of this server.
     host_id = resource.Body('hostId')
+    #: The hostname of this server
+    hostname = resource.Body('hostname')
     #: The image reference, as a ID or full URL, for the image to use for
     #: this server.
     image_id = resource.Body('imageRef')
